@@ -576,7 +576,7 @@ package org.swiftsuspenders
 		 */
 		public function getTypeDescription(type : Class) : TypeDescription
 		{
-			return _reflector.describeInjections(type);
+            	        return _classDescriptor.getDescription(type);
 		}
 		
 		public function hasMapping(type : Class, name : String = '') : Boolean
